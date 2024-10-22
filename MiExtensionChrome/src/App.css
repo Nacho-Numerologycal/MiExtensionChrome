@@ -1,0 +1,131 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --module-background: #f0f0f0;
+    --button-background: #4a4a4a;
+    --button-text: #ffffff;
+    --process-button-background: #90EE90;
+    --border-color: #cccccc;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .app {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-panel {
+    margin-bottom: 20px;
+  }
+  
+  .bottom-panel {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-panel, .right-panel {
+    width: 48%;
+  }
+  
+  .file-selector {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 4rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--module-background);
+  }
+  
+  .file-list {
+    margin-top: 20px;
+    background-color: var(--module-background);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .file-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .file-list li {
+    margin-bottom: 10px;
+  }
+  
+  .file-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+  
+  .progress-bar-fill {
+    height: 10px;
+    background-color: var(--process-button-background);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .file-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .process-button {
+    background-color: var(--process-button-background);
+    color: var(--text-color);
+  }
+  
+  .output-options, .api-key-manager {
+    background-color: var(--module-background);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+  
+  .processing-status {
+    margin-top: 20px;
+  }
